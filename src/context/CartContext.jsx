@@ -1,7 +1,7 @@
 // CartContext.jsx
 
-import React, { createContext, useState, useEffect, useContext } from 'react'; // Combined imports
-import '../app.css'
+import React, { createContext, useState, useEffect, useContext } from 'react';
+
 
 export const CartContext = createContext();
 
