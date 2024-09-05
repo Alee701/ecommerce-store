@@ -1,0 +1,254 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1200px; /* Adjust for better centering on larger screens */
+}
+
+/* HeaderStyles.css */
+.header-container {
+  background-color: #1f2937; /* Dark gray background for a modern look */
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.logo {
+  font-size: 1.875rem; /* Larger font for the store name */
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+}
+
+.search-bar {
+  position: relative;
+  width: 33%; /* Adjust the width of the search bar */
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #4b5563; /* Border with medium gray */
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3b82f6; /* Blue border on focus */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Ring effect */
+}
+
+.cart-section {
+  display: flex;
+  align-items: center;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem; /* Slightly larger font */
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cart-link:hover {
+  color: #3b82f6; /* Blue hover effect */
+}
+
+.cart-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+  transition: transform 0.3s ease;
+}
+
+.cart-link:hover .cart-icon {
+  transform: scale(1.1); /* Slight icon scale on hover */
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    width: 50%; /* Adjust search bar width for tablets */
+  }
+
+  .cart-link {
+    font-size: 1rem; /* Adjust cart link size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar {
+    width: 100%; /* Full-width search bar for mobile */
+  }
+
+  .logo {
+    font-size: 1.5rem; /* Smaller logo font for mobile */
+  }
+}
+
+
+
+/* Button styles */
+.btn {
+  padding: 10px 20px;
+  background-color: #1e40af; /* Primary button color */
+  color: white;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1d4ed8; /* Hover color for buttons */
+}
+
+
+
+/* Cart item styles */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd; /* Add separator for clarity */
+}
+
+.cart-item .item-info {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item .item-info img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 8px; /* Rounded images for modern look */
+}
+
+.cart-item .item-price {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Product Card CSS */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Subtle hover scaling */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.product-image-wrapper {
+  position: relative;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  overflow: hidden;
+}
+
+.product-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.1); /* Image zoom on hover */
+}
+
+.product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; /* Ensure long titles are neatly trimmed */
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.add-to-cart-btn {
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #165bbf; /* Darker blue on hover */
+}
+
+.view-details-link {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.view-details-link:hover {
+  color: #165bbf; /* Hover effect for links */
+}
+
+/* Empty Cart Message */
+.empty-cart {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Cart Action Buttons */
+.clear-btn {
+  background-color: #ef4444; /* Red for clear cart */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear-btn:hover {
+  background-color: #dc2626;
+}
+
+
+#filtersec {
+  display: flex;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
